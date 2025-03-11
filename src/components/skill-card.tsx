@@ -26,13 +26,7 @@ export function SkillCard({
       </div>
       <div className="mt-3">
         <div className="flex flex-wrap gap-2">
-          {[
-            "Automation",
-            "Deployment",
-            "Monitoring",
-            "Scaling",
-            "Security",
-          ].map((tag) => (
+          {["Automation", "Deployment", "Monitoring"].map((tag) => (
             <span
               key={tag}
               className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full font-medium"

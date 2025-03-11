@@ -14,9 +14,9 @@ export function ProjectsSection() {
         { label: "Recovery Time", value: "<5min" },
       ],
       imageUrl:
-        "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80",
+        "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&q=70",
       diagramUrl:
-        "https://images.unsplash.com/photo-1542903660-eedba2cda473?w=800&q=80",
+        "https://images.unsplash.com/photo-1542903660-eedba2cda473?w=600&q=70",
       githubUrl: "#",
       liveUrl: "#",
     },
@@ -32,9 +32,9 @@ export function ProjectsSection() {
         { label: "Cost Savings", value: "$45K" },
       ],
       imageUrl:
-        "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=800&q=80",
+        "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=600&q=70",
       diagramUrl:
-        "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800&q=80",
+        "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=600&q=70",
       githubUrl: "#",
     },
     {
@@ -49,9 +49,9 @@ export function ProjectsSection() {
         { label: "Dev Productivity", value: "+40%" },
       ],
       imageUrl:
-        "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=800&q=80",
+        "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=600&q=70",
       diagramUrl:
-        "https://images.unsplash.com/photo-1633412802994-5c058f151b66?w=800&q=80",
+        "https://images.unsplash.com/photo-1633412802994-5c058f151b66?w=600&q=70",
       liveUrl: "#",
     },
     {
@@ -66,9 +66,9 @@ export function ProjectsSection() {
         { label: "Visibility", value: "+100%" },
       ],
       imageUrl:
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=70",
       diagramUrl:
-        "https://images.unsplash.com/photo-1543286386-713bdd548da4?w=800&q=80",
+        "https://images.unsplash.com/photo-1543286386-713bdd548da4?w=600&q=70",
       githubUrl: "#",
       liveUrl: "#",
     },

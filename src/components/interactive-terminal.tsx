@@ -157,7 +157,10 @@ export function InteractiveTerminal({ className }: { className?: string }) {
         <div className="ml-2 text-xs text-gray-400">interactive-terminal</div>
       </div>
 
-      <div className="flex-1 overflow-auto mb-4 terminal-output">
+      <div
+        className="flex-1 overflow-auto mb-4 terminal-output"
+        style={{ maxHeight: "300px" }}
+      >
         {history.map((item, index) => (
           <div key={index} className="mb-1">
             {item.isCommand ? (

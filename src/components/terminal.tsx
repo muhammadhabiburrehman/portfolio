@@ -27,8 +27,8 @@ export function Terminal({
     "Bash",
     "Python",
   ],
-  typingSpeed = 50,
-  pauseDuration = 800,
+  typingSpeed = 80,
+  pauseDuration = 1200,
 }: TerminalProps) {
   const [text, setText] = useState("");
   const [skillIndex, setSkillIndex] = useState(0);
