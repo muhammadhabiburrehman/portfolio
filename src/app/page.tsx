@@ -7,6 +7,7 @@ import { HeroSection } from "@/components/hero-section";
 import { ProjectsSection } from "@/components/projects-section";
 import { SkillsSection } from "@/components/skills-section";
 import { TerminalSection } from "@/components/terminal-section";
+import { YoutubeSection } from "@/components/youtube-section";
 
 export default function Page() {
   return (
@@ -25,6 +26,9 @@ export default function Page() {
         </div>
         <div id="experience">
           <ExperienceSection />
+        </div>
+        <div id="youtube">
+          <YoutubeSection />
         </div>
         <div id="contact">
           <ContactSection />

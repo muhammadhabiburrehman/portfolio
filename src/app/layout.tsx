@@ -2,6 +2,7 @@ import { TempoInit } from "@/components/tempo-init";
 import { ThemeProvider } from "@/components/theme-provider";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Suspense } from "react";
 import Script from "next/script";
 import "./globals.css";
 
@@ -29,7 +30,9 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
-        <TempoInit />
+        <Suspense fallback={null}>
+          <TempoInit />
+        </Suspense>
       </body>
     </html>
   );

@@ -1,43 +1,27 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
-import type { Container, Engine } from "tsparticles-engine";
+import type { Engine } from "tsparticles-engine";
 
 export function ParticlesBackground() {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadSlim(engine);
   }, []);
-
-  const particlesLoaded = useCallback(
-    async (container: Container | undefined) => {
-      // Container loaded
-    },
-    [],
-  );
-
-  if (!mounted) return null;
 
   return (
     <Particles
       className="absolute inset-0 -z-10"
       id="tsparticles"
       init={particlesInit}
-      loaded={particlesLoaded}
       options={{
+        fpsLimit: 30,
         background: {
           color: {
             value: "transparent",
           },
         },
-        fpsLimit: 120,
         interactivity: {
           events: {
             onClick: {
@@ -52,12 +36,12 @@ export function ParticlesBackground() {
           },
           modes: {
             push: {
-              quantity: 4,
+              quantity: 2,
             },
             grab: {
               distance: 140,
               links: {
-                opacity: 0.5,
+                opacity: 0.3,
               },
             },
           },
@@ -70,7 +54,7 @@ export function ParticlesBackground() {
             color: "#a8a8a8",
             distance: 150,
             enable: true,
-            opacity: 0.4,
+            opacity: 0.3,
             width: 1,
           },
           move: {
@@ -80,7 +64,7 @@ export function ParticlesBackground() {
               default: "bounce",
             },
             random: false,
-            speed: 2,
+            speed: 1,
             straight: false,
           },
           number: {
@@ -88,10 +72,10 @@ export function ParticlesBackground() {
               enable: true,
               area: 800,
             },
-            value: 80,
+            value: 30,
           },
           opacity: {
-            value: 0.7,
+            value: 0.5,
           },
           shape: {
             type: "circle",
@@ -100,7 +84,7 @@ export function ParticlesBackground() {
             value: { min: 1, max: 3 },
           },
         },
-        detectRetina: true,
+        detectRetina: false,
       }}
     />
   );

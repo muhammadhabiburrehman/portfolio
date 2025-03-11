@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { ThemeSwitcher } from "@/components/theme-switcher";
 import { cn } from "@/lib/utils";
-import { MenuIcon, XIcon } from "lucide-react";
+import { MenuIcon, SettingsIcon, XIcon } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -26,6 +26,7 @@ export function Header() {
     { label: "Projects", href: "#projects" },
     { label: "Certifications", href: "#certifications" },
     { label: "Experience", href: "#experience" },
+    { label: "YouTube", href: "#youtube" },
     { label: "Contact", href: "#contact" },
   ];
 
